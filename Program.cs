@@ -12,7 +12,7 @@ public class Exercise13 // {}
         Console.WriteLine(number + " " + number);
         Console.WriteLine(number + number + number);
 
-        // Alternativa:
+        // Alternative:
 
         Console.Write("Enter a number again: ");
         string x = (Console.ReadLine());
