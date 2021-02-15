@@ -26,5 +26,3 @@ public class Exercise13 // {r}
         Console.ReadLine();
     }
 }
-
-//Mais testes
