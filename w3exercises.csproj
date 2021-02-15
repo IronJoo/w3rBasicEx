@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">anycpu</Platform>
-    <ProjectGuid>{68CB1303-DD5A-4D3D-AF52-F59628D6833E}</ProjectGuid>
+    <ProjectGuid>{61F54680-CE0A-4797-8189-FFF93DEFBCC6}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>w3exercises</RootNamespace>
     <AssemblyName>w3exercises</AssemblyName>
@@ -30,6 +30,7 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

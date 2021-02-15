@@ -1,28 +1,21 @@
 ﻿using System;
-public class Exercise13 // {}
+
+namespace w3exercises
 {
-    public static void Main()
+    class Exercise14
     {
-        Console.Write("Enter a number: ");
-        string number = (Console.ReadLine());
+        public static void Main(string[] args)
+        {
+            Console.Write("Enter the amount of celsius: ");
+            int celsius = int.Parse(Console.ReadLine());
+            int kelvin = celsius + 273;
+            int fahrenheit = celsius * 18 / 10 + 32;
 
-        Console.WriteLine(number + number + number);
-        Console.WriteLine(number + " " + number);
-        Console.WriteLine(number + " " + number);
-        Console.WriteLine(number + " " + number);
-        Console.WriteLine(number + number + number);
+            Console.WriteLine($"Kelvin = {kelvin}");
+            Console.WriteLine($"Fahrenheit = {fahrenheit}");
 
-        // Alternative:
 
-        Console.Write("Enter a number again: ");
-        string x = (Console.ReadLine());
-
-        Console.WriteLine("{0}{0}{0}",x);
-        Console.WriteLine("{0} {0}",x);
-        Console.WriteLine("{0} {0}",x);
-        Console.WriteLine("{0} {0}",x);
-        Console.WriteLine("{0}{0}{0}",x);
-
-        Console.ReadLine();
+            Console.ReadLine();
+        }
     }
 }
