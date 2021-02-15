@@ -1,5 +1,5 @@
 ﻿using System;
-public class Exercise13 // {r}
+public class Exercise13 // {}
 {
     public static void Main()
     {
@@ -26,5 +26,3 @@ public class Exercise13 // {r}
         Console.ReadLine();
     }
 }
-
-//Mais testes
