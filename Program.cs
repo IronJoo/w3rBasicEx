@@ -1,21 +1,23 @@
 ﻿using System;
 
-namespace w3exercises
+namespace w3exercises //{}
 {
-    class Exercise14
+    class Exercise15
     {
         public static void Main(string[] args)
         {
-            Console.Write("Enter the amount of celsius: ");
-            int celsius = int.Parse(Console.ReadLine());
-            int kelvin = celsius + 273;
-            int fahrenheit = celsius * 18 / 10 + 32;
-
-            Console.WriteLine($"Kelvin = {kelvin}");
-            Console.WriteLine($"Fahrenheit = {fahrenheit}");
-
-
+            Console.WriteLine("Insert a word: ");
+            string word = Console.ReadLine();
+            Console.WriteLine("You inserted the word {0}.\nSome characters will be removed.", word);
+            Console.WriteLine(remove_char(word, 1));
+            Console.WriteLine(remove_char(word, word.Length-1));
+            Console.WriteLine(remove_char(word, 0));
             Console.ReadLine();
+        }
+
+        static string remove_char(string str, int n)
+        {
+            return str.Remove(n, 1);
         }
     }
 }
