@@ -2,22 +2,24 @@
 
 namespace w3exercises //{}
 {
-    class Exercise15
+    class Exercise16
     {
         public static void Main(string[] args)
         {
             Console.WriteLine("Insert a word: ");
             string word = Console.ReadLine();
-            Console.WriteLine("You inserted the word {0}.\nSome characters will be removed.", word);
-            Console.WriteLine(remove_char(word, 1));
-            Console.WriteLine(remove_char(word, word.Length-1));
-            Console.WriteLine(remove_char(word, 0));
+            Console.WriteLine("You inserted the word {0}.\nThe first and last letters will change positions:", word);
+            Console.WriteLine(change_char(word));
             Console.ReadLine();
         }
 
-        static string remove_char(string str, int n)
+        static string change_char(string str)
         {
-            return str.Remove(n, 1);
+            string firstchar = str.Substring(0, 1);
+            string lastchar = str.Substring(str.Length-1);
+            string middlechar = str.Substring(1, str.Length-2);
+
+            return lastchar + middlechar + firstchar;
         }
     }
 }
