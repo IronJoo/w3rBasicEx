@@ -15,11 +15,18 @@ namespace w3exercises //{}
 
         static string change_char(string str)
         {
+            if (str.Length > 1)
+            {
             string firstchar = str.Substring(0, 1);
             string lastchar = str.Substring(str.Length-1);
             string middlechar = str.Substring(1, str.Length-2);
 
             return lastchar + middlechar + firstchar;
+            }
+            else
+            {
+                return str;
+            }
         }
     }
 }
